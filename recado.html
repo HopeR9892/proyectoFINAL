@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleR.css"> 
+    <title>Task</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+   
+
+</head>
+<body >
+    <h1>Lista de Tareas</h1>
+    <div class="datos">
+        <p id="total">Total de tareas: 0</p>
+        <p id="completadas">Tareas Completadas: 0</p>
+    </div>
+
+    <div class="contenedor"> 
+        <form class="formulario" id="formulario">
+            <h4>Formulario</h4>
+            <input type="text" id="tarea" placeholder="Ingresa la Tarea">
+            <input type="submit" value="Agregar">
+        </form>
+
+        <div class="tareas" id="tareas" >
+            <div class="item-tarea">
+                <p>Tarea 1</p>
+                <div class="botones">
+                    <button class="eliminar" data-id="${item.id}">X</button>
+                    <button class="completada" data-id="${item.id}">!</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
